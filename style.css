@@ -1,6 +1,8 @@
 body {
   font-family: "Lato", sans-serif;
 }
-i {
+#icon,
+#player1,
+#player2 {
   font-size: 50px;
 }
