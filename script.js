@@ -20,13 +20,17 @@ function iconDisplay(icon) {
 }
 
 //Variables declaration for Dom
+let currentDisplayDice1 = document.getElementById("currentDice1");
+let currentPlayerScore1 = document.getElementById("currentScore1");
+let currentDisplayDice2 = document.getElementById("currentDice2");
+let currentPlayerScore2 = document.getElementById("currentScore2");
 let rollDice = document.getElementById("rollDice");
 let newgame = document.getElementById("newGame");
-let currentDisplayDice = document.getElementById("currentDice");
 let iconPlace = document.querySelector("#icon");
+let hold = document.getElementById("hold");
 //other variables declaration
 let currentDice = 0;
-let hold = 0;
+let saveScore = 0;
 let currentScore = 0;
 let icons = [
   "bi bi-dice-1-fill",
@@ -42,15 +46,20 @@ rollDice.addEventListener("click", () => {
   currentDice = rollTheDice();
   if (currentDice === 1) {
     currentScore = 0;
-    displayOnPage(currentScore, currentDisplayDice);
+    displayOnPage(currentScore, currentDisplayDice1);
     console.log(currentDice);
   } else {
     currentScore = addTwoNumber(currentDice, currentScore);
-    displayOnPage(currentScore, currentDisplayDice);
+    displayOnPage(currentScore, currentDisplayDice1);
     console.log(currentDice);
   }
   let icon = iconSearch(icons, currentDice);
   iconDisplay(icon);
+});
+//Event listener to click 'hold'
+hold.addEventListener("click", () => {
+  saveScore = addTwoNumber(saveScore, currentScore);
+  displayOnPage(saveScore, currentPlayerScore1);
 });
 //Event Listener to click 'new game'
 newgame.addEventListener("click", () => {
