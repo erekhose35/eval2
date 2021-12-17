@@ -58,8 +58,9 @@ let currentPlayer2 = document.querySelector("#player2");
 let currentDisplayDice2 = document.getElementById("currentDice2");
 let currentPlayerScore2 = document.getElementById("currentScore2");
 
-let rollDice = document.getElementById("rollDice");
 let newgame = document.getElementById("newGame");
+let rollDice = document.getElementById("rollDice");
+let soundDice = document.getElementById("diceSound");
 let iconPlace = document.querySelector("#icon");
 let hold = document.getElementById("hold");
 
@@ -97,6 +98,7 @@ let icons = [
 
 //Event listener to click 'roll the dice'
 rollDice.addEventListener("click", () => {
+  soundDice.play();
   currentDice = rollTheDice();
   if (currentDice === 1) {
     currentScore = 0;
