@@ -10,7 +10,7 @@ function addTwoNumber(nb1, nb2) {
 function displayOnPage(something, where) {
   where.firstChild.replaceWith(something);
 }
-//function to change player
+//function to change player and display the SVG 'active player'
 function changePlayer(playerTochange) {
   playerTochange.player.setAttribute(
     "class",
@@ -64,7 +64,7 @@ let soundDice = document.getElementById("diceSound");
 let iconPlace = document.querySelector("#icon");
 let hold = document.getElementById("hold");
 
-//Players array
+//Players declarations
 let player1 = {
   name: "Joueur 1",
   player: currentPlayer1,
