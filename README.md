@@ -23,11 +23,21 @@ Organisation des fichiers :
 - /annexes pour les fichiers annexes
 
 Installation de Bootstrap 5 via CDN en ajoutant les liens présents sur la documentation :
-html`
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-`
+```html
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+  crossorigin="anonymous"
+/>
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+  crossorigin="anonymous"
+/>
+```
 
 ## Deposer le repository sur Github
 
@@ -49,3 +59,11 @@ Pour la mise en ligne, j'ai choisis une plateforme gratuite. Mon premier essais 
 - Pour passer de l'algoritme à javascript, j 'ai décidé de découper mon script en plusieurs petites fonctions que j ai intégré petit à petit de ma branch 'functionJS' à ma branche 'main'
 - quand l'appli fonctionnait bien, j ai décidé d'améliorer le design de l'interface
 - et enfin d intégrer des icons SVG et une 'animation' sonore (mp3 open source)
+
+## Ressources utilisés
+
+- Documentation Bootstrap : https://getbootstrap.com/docs/5.0/getting-started/introduction/
+- https://edutechwiki.unige.ch/fr/SVG_avec_JavaScript pour la gestion des SVG avec javascript
+- https://icons.getbootstrap.com/ pour les icones SVG
+- Cour Studi sur Javascript, html et css
+- https://planethoster.live/threads/comment-heberger-son-site-sur-un-serveur-gratuit.5202/ pour le déploiement en ligne.
